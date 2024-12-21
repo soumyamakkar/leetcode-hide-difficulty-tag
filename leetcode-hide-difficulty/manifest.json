@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "LeetCode Hide Difficulty Tag",
+    "version": "1.0",
+    "description": "Hides the difficulty tag on LeetCode problems",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://leetcode.com/problems/*"],
+        "css": ["style.css"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
